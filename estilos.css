@@ -1,0 +1,20 @@
+.img_container {
+  position: relative;
+  width: 300px;
+}
+
+.imagen {
+  width: 300px;
+}
+
+figure {
+  margin: 0;
+}
+
+.texto_superior {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  cursor: move;
+}
