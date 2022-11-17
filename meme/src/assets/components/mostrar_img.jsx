@@ -3,7 +3,7 @@ import Input_texto from "./input_texto";
 function Mostrar_img(img) {
   return (
     <div className="img_container">
-      <figure>
+      <figure id="figure">
         <img
           className="imagen"
           src={
@@ -13,7 +13,10 @@ function Mostrar_img(img) {
           }
         />
       </figure>
-      <Input_texto />
+      <h3>Texto 1 - Arrastrar para ubicar</h3>
+      <Input_texto/>
+      <h3>Texto 2 - Arrastrar para ubicar</h3>
+      <Input_texto/>
     </div>
   );
 }

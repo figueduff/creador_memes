@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Draggable, { DraggableCore } from "react-draggable";
 
 function input_texto() {
   const [textoMeme, settextoMeme] = useState();
@@ -18,44 +19,44 @@ function input_texto() {
 
   return (
     <>
-        <h3>Agregar Texto</h3>
-        <input
-          onChange={(e) => {
-            settextoMeme(e.target.value);
-          }}
-          type="text"
-        />
-        <input
-          onChange={(e) => {
-            setcolorTexto(e.target.value);
-            console.log(colorTexto);
-          }}
-          type="color"
-        />
-        <input
-          onChange={(e) => {
-            settamanioTexto(e.target.value);
-            console.log(tamanioTexto);
-          }}
-          type="range"
-          min="20"
-          max="40"
-          value={tamanioTexto}
-          step="1"
-        />
-        <select
-          onChange={(e) => {
-            settipografiaTexto(e.target.value);
-            console.log(tipografiaTexto);
-          }}>
-          <option value="Impact">Impact</option>
-          <option value="Arial">Arial</option>
-          <option value="Verdana">Verdana</option>
-        </select>
-      <p className="texto_superior" style={estilos.estilo}>
-        {textoMeme}
-      </p>
-      {/* <Texto texto={textoMeme}/> */}
+      <input
+        onChange={(e) => {
+          settextoMeme(e.target.value);
+        }}
+        type="text"
+      />
+      <input
+        onChange={(e) => {
+          setcolorTexto(e.target.value);
+          console.log(colorTexto);
+        }}
+        type="color"
+      />
+      <input
+        onChange={(e) => {
+          settamanioTexto(e.target.value);
+          console.log(tamanioTexto);
+        }}
+        type="range"
+        min="20"
+        max="40"
+        value={tamanioTexto}
+        step="1"
+      />
+      <select
+        onChange={(e) => {
+          settipografiaTexto(e.target.value);
+          console.log(tipografiaTexto);
+        }}>
+        <option value="Impact">Impact</option>
+        <option value="Arial">Arial</option>
+        <option value="Verdana">Verdana</option>
+      </select>
+      <Draggable bounds="figure">
+        <p className="texto_superior" id="texto_clon" style={estilos.estilo}>
+          {textoMeme}
+        </p>
+      </Draggable>
     </>
   );
 }
