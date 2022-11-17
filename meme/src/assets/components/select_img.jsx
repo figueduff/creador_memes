@@ -31,8 +31,8 @@ function Select_img() {
   return (
     <div>
       <h3>Elegir Imagen</h3>
-      <input list="meme" onChange={imgSelecionada} placeholder="Elegir meme" />
-      <datalist id="meme" placeholder="Elegir meme">
+      <input list="meme" onChange={imgSelecionada} placeholder="Elegir imagen" />
+      <datalist id="meme">
         {memes.map((op) => (
           <option key={op.id} value={op.name} data-url={op.id}></option>
         ))}
