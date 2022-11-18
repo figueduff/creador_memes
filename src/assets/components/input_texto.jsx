@@ -5,7 +5,7 @@ function input_texto() {
   const [textoMeme, settextoMeme] = useState();
   const [colorTexto, setcolorTexto] = useState("black");
   const [tamanioTexto, settamanioTexto] = useState("20");
-  const [tipografiaTexto, settipografiaTexto] = useState("Impact");
+  const [tipografiaTexto, settipografiaTexto] = useState("Anton");
 
   const estilos = {
     estilo: {
@@ -50,9 +50,9 @@ function input_texto() {
           settipografiaTexto(e.target.value);
           console.log(tipografiaTexto);
         }}>
-        <option value="Impact">Impact</option>
-        <option value="Arial">Arial</option>
-        <option value="Verdana">Verdana</option>
+        <option value="Anton">Anton</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Crafty Girls">Crafty</option>
       </select>
       </div>
       <Draggable bounds="figure">
