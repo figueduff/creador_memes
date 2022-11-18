@@ -19,6 +19,8 @@ function input_texto() {
 
   return (
     <>
+    <div data-html2canvas-ignore>
+    <h3>Texto 1 - Arrastrar para ubicar</h3>
       <input
         onChange={(e) => {
           settextoMeme(e.target.value);
@@ -52,6 +54,7 @@ function input_texto() {
         <option value="Arial">Arial</option>
         <option value="Verdana">Verdana</option>
       </select>
+      </div>
       <Draggable bounds="figure">
         <p className="texto_superior" id="texto_clon" style={estilos.estilo}>
           {textoMeme}

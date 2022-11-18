@@ -14,8 +14,7 @@ const onClickExportar = function (evento) {
   //   link.click();
   // });
 
-  html2canvas(document.querySelector("#figure"), {
-    logging: true,
+  html2canvas(document.querySelector("#img_container"), {
     letterRendering: 1,
     allowTaint: true,
     useCORS: true,
