@@ -24,6 +24,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<NOMBRE DE USUARIO>/<NOMBRE DE USUARIO>.github.io.git main
 
 # si estás desplegando en https://<NOMBRE DE USUARIO>.github.io/<REPO>
-# git push -f git@github.com:<NOMBRE DE USUARIO>/<REPO>.git main:gh-pages
+# git push -f git@github.com:figueduff/creador_memes.git main:gh-pages
 
 cd -
