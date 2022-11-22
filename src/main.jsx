@@ -18,8 +18,8 @@ const onClickExportar = function (evento) {
     allowTaint: true,
     useCORS: true,
   }).then((canvas) => {
-    var img = canvas.toDataURL("image/png");
-    var link = document.createElement("a");
+    let img = canvas.toDataURL("image/png");
+    let link = document.createElement("a");
     link.download = "Meme.jpg";
     link.href = img;
     link.click();
