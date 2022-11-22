@@ -15,7 +15,6 @@ const onClickExportar = function (evento) {
   // });
 
   html2canvas(document.querySelector("#img_container"), {
-    letterRendering: 1,
     allowTaint: true,
     useCORS: true,
   }).then((canvas) => {
