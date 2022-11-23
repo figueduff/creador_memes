@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&display=swap');
+body{
+  font-family: roboto;
+}
 
 .img_container {
   position: relative;
@@ -19,4 +21,8 @@ figure {
   top: 0;
   left: 0;
   cursor: move;
+}
+
+input, select{
+  margin: .4rem;
 }

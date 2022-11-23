@@ -19,41 +19,55 @@ function input_texto() {
 
   return (
     <>
-    <div data-html2canvas-ignore>
-    <h3>Texto 1 - Arrastrar para ubicar</h3>
-      <input
-        onChange={(e) => {
-          settextoMeme(e.target.value);
-        }}
-        type="text"
-      />
-      <input
-        onChange={(e) => {
-          setcolorTexto(e.target.value);
-          console.log(colorTexto);
-        }}
-        type="color"
-      />
-      <input
-        onChange={(e) => {
-          settamanioTexto(e.target.value);
-          console.log(tamanioTexto);
-        }}
-        type="range"
-        min="20"
-        max="40"
-        value={tamanioTexto}
-        step="1"
-      />
-      <select
-        onChange={(e) => {
-          settipografiaTexto(e.target.value);
-          console.log(tipografiaTexto);
-        }}>
-        <option value="Anton">Anton</option>
-        <option value="Roboto">Roboto</option>
-        <option value="Crafty Girls">Crafty</option>
-      </select>
+      <div data-html2canvas-ignore>
+        <input
+          placeholder="Ingrese texto"
+          onChange={(e) => {
+            settextoMeme(e.target.value);
+          }}
+          type="text"
+        />
+        <div>
+        <label for="color" class="form-label">
+          Color de texto</label>
+        <input
+          id="color"
+          onChange={(e) => {
+            setcolorTexto(e.target.value);
+            console.log(colorTexto);
+          }}
+          type="color"
+        />
+        </div>
+        <label for="tamaniotexto" class="form-label">
+          Tamaño de texto
+        </label>
+        <input
+          id="tamaniotexto"
+          class="form-range"
+          onChange={(e) => {
+            settamanioTexto(e.target.value);
+            console.log(tamanioTexto);
+          }}
+          type="range"
+          min="20"
+          max="40"
+          value={tamanioTexto}
+          step="1"
+        />
+        <label for="tipografia" class="form-label">
+          Tipografia{" "}
+        </label>
+        <select
+          id="tipografia"
+          onChange={(e) => {
+            settipografiaTexto(e.target.value);
+            console.log(tipografiaTexto);
+          }}>
+          <option value="Anton">Anton</option>
+          <option value="Roboto">Roboto</option>
+          <option value="Crafty Girls">Crafty</option>
+        </select>
       </div>
       <Draggable bounds="figure">
         <p className="texto_superior" id="texto_clon" style={estilos.estilo}>

@@ -14,6 +14,7 @@ function Mostrar_img(img) {
               }
             />
           </figure>
+          <h4 data-html2canvas-ignore>Arrastrar para ubicar</h4>
       <Input_texto />
       <Input_texto />
       </div>
