@@ -28,7 +28,9 @@ const onClickExportar = function (evento) {
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <div className="container bg-light text-center">
     <Select_img />
     <button onClick={onClickExportar} class="btn btn-primary sm">Descargar Meme</button>
+    </div>
   </React.StrictMode>
 );

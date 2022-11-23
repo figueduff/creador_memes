@@ -29,7 +29,7 @@ function Select_img() {
   }, []);
 
   return (
-    <div>
+    <>
       <h4>Elegir Imagen</h4>
       <input
         list="meme"
@@ -41,8 +41,10 @@ function Select_img() {
           <option key={op.id} value={op.name} data-url={op.id}></option>
         ))}
       </datalist>
+      <div>
       <Mostrar_img img={img} />
     </div>
+    </>
   );
 }
 

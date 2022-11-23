@@ -1,10 +1,17 @@
 body {
   font-family: roboto;
+  margin: 0;
+}
+.container, .row {
+  margin: 0 auto;
+  padding: 0;
 }
 
 .img_container {
   position: relative;
   width: 300px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .imagen {
@@ -24,6 +31,8 @@ figure {
 }
 
 input,
-select {
+select,
+button {
   margin: 0.4rem;
 }
+
