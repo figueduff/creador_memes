@@ -20,13 +20,13 @@ body {
 }
 
 img {
-  width: 300px;
+  width: 320px;
   margin: 0 auto;
   padding: 0;
 }
 
 figure {
-  width: 300px;
+  width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -43,4 +43,24 @@ input,
 select,
 button {
   margin: 0.4rem;
+}
+
+input[type="range"] {
+  width: 75px;
+}
+
+input[type="text"] {
+  width: 125px;
+}
+
+#modificadores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-label{
+  margin: 0;
+}
+#eleccionimg {
+  display: inline-block;
 }

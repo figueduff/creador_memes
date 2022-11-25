@@ -19,7 +19,11 @@ function input_texto() {
 
   return (
     <>
-      <div data-html2canvas-ignore>
+      <div data-html2canvas-ignore id="modificadores">
+        <div>
+        <label htmlFor="texto" className="form-label">
+            Texto
+          </label>
         <input
           placeholder="Ingrese texto"
           onChange={(e) => {
@@ -27,12 +31,12 @@ function input_texto() {
           }}
           type="text"
         />
+        </div>
         <div>
           <label htmlFor="color" className="form-label">
-            Color de texto
+            Color
           </label>
           <input
-            id="color"
             onChange={(e) => {
               setcolorTexto(e.target.value);
               console.log(colorTexto);
@@ -40,11 +44,11 @@ function input_texto() {
             type="color"
           />
         </div>
+        <div>
         <label htmlFor="tamaniotexto" className="form-label">
-          Tamaño de texto
+          Tamaño
         </label>
         <input
-          id="tamaniotexto"
           className="form-range"
           onChange={(e) => {
             settamanioTexto(e.target.value);
@@ -56,11 +60,12 @@ function input_texto() {
           value={tamanioTexto}
           step="1"
         />
+        </div>
+        <div>
         <label htmlFor="tipografia" className="form-label">
           Tipografia{" "}
         </label>
         <select
-          id="tipografia"
           onChange={(e) => {
             settipografiaTexto(e.target.value);
             console.log(tipografiaTexto);
@@ -69,6 +74,7 @@ function input_texto() {
           <option value="Roboto">Roboto</option>
           <option value="Crafty Girls">Crafty</option>
         </select>
+        </div>
       </div>
       <Draggable bounds="figure" >
         <p className="texto_superior" style={estilos.estilo}>

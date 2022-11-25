@@ -30,20 +30,22 @@ function Select_img() {
 
   return (
     <>
-      <h4>Elegir Imagen</h4>
-      <input
-        list="meme"
-        onChange={imgSelecionada}
-        placeholder="Elegir imagen"
-      />
-      <datalist id="meme">
-        {memes.map((op) => (
-          <option key={op.id} value={op.name} data-url={op.id}></option>
-        ))}
-      </datalist>
+      <div id="eleccionimg">
+        <h5>Generador de Meme</h5>
+        <input
+          list="meme"
+          onChange={imgSelecionada}
+          placeholder="Elegir imagen"
+        />
+        <datalist id="meme">
+          {memes.map((op) => (
+            <option key={op.id} value={op.name} data-url={op.id}></option>
+          ))}
+        </datalist>
+      </div>
       <div>
-      <Mostrar_img img={img} />
-    </div>
+        <Mostrar_img img={img} />
+      </div>
     </>
   );
 }

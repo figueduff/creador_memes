@@ -15,9 +15,9 @@ function Mostrar_img(img) {
             }
           />
         </figure>
-        <h4 data-html2canvas-ignore className="mt-1">
-          Arrastrar texto para ubicarlo en la imagen
-        </h4>
+        <h5 data-html2canvas-ignore className="mt-1">
+          Arrastrar el texto para ubicarlo
+        </h5>
         <Input_texto />
         <Input_texto />
       </div>
