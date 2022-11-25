@@ -28,23 +28,24 @@ function input_texto() {
           type="text"
         />
         <div>
-        <label for="color" class="form-label">
-          Color de texto</label>
-        <input
-          id="color"
-          onChange={(e) => {
-            setcolorTexto(e.target.value);
-            console.log(colorTexto);
-          }}
-          type="color"
-        />
+          <label htmlFor="color" className="form-label">
+            Color de texto
+          </label>
+          <input
+            id="color"
+            onChange={(e) => {
+              setcolorTexto(e.target.value);
+              console.log(colorTexto);
+            }}
+            type="color"
+          />
         </div>
-        <label for="tamaniotexto" class="form-label">
+        <label htmlFor="tamaniotexto" className="form-label">
           Tamaño de texto
         </label>
         <input
           id="tamaniotexto"
-          class="form-range"
+          className="form-range"
           onChange={(e) => {
             settamanioTexto(e.target.value);
             console.log(tamanioTexto);
@@ -55,7 +56,7 @@ function input_texto() {
           value={tamanioTexto}
           step="1"
         />
-        <label for="tipografia" class="form-label">
+        <label htmlFor="tipografia" className="form-label">
           Tipografia{" "}
         </label>
         <select
@@ -69,8 +70,8 @@ function input_texto() {
           <option value="Crafty Girls">Crafty</option>
         </select>
       </div>
-      <Draggable bounds="figure">
-        <p className="texto_superior" id="texto_clon" style={estilos.estilo}>
+      <Draggable bounds="figure" >
+        <p className="texto_superior" style={estilos.estilo}>
           {textoMeme}
         </p>
       </Draggable>

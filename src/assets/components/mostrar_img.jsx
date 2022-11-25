@@ -6,7 +6,8 @@ function Mostrar_img(img) {
       <div className="img_container" id="img_container">
         <figure id="figure">
           <img
-            className="imagen"
+            id="ubicar"
+            alt="imagen"
             src={
               img.img !== ""
                 ? `https://api.memegen.link/images/${img.img}.png`
@@ -14,11 +15,12 @@ function Mostrar_img(img) {
             }
           />
         </figure>
-          <h4 data-html2canvas-ignore>Arrastrar para ubicar</h4>
-          <Input_texto />
-          <Input_texto />
-        </div>
-      
+        <h4 data-html2canvas-ignore className="mt-1">
+          Arrastrar texto para ubicarlo en la imagen
+        </h4>
+        <Input_texto />
+        <Input_texto />
+      </div>
     </>
   );
 }
