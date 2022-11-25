@@ -1,28 +1,46 @@
-body{
+body {
   font-family: roboto;
+  margin: 0;
+  background-color: silver;
+}
+.container {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 0;
+}
+
+.row {
+  margin: 0;
 }
 
 .img_container {
   position: relative;
-  width: 300px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.imagen {
+img {
   width: 300px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 figure {
+  width: 300px;
   margin: 0;
+  padding: 0;
 }
 
 .texto_superior {
   position: absolute;
-  margin: 0;
   top: 0;
   left: 0;
-  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
-input, select{
-  margin: .4rem;
+input,
+select,
+button {
+  margin: 0.4rem;
 }
