@@ -58,9 +58,42 @@ input[type="text"] {
   justify-content: center;
   align-items: center;
 }
-.form-label{
+.form-label {
   margin: 0;
 }
 #eleccionimg {
   display: inline-block;
 }
+li img {
+  padding: 2px;
+  height: 60px;
+  width: 60px;
+}
+
+.dropdown {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+}
+
+.dropdown-item {
+  width: 20%;
+  padding: 1px;
+  text-align: center;
+  cursor: pointer;
+} 
+
+.dropdown-menu.show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 320px;
+  margin: 0;
+} 
+
+.dropdown button{
+  margin: 0;
+}
+
+
+

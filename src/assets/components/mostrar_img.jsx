@@ -10,7 +10,7 @@ function Mostrar_img(img) {
             alt="imagen"
             src={
               img.img !== ""
-                ? `https://api.memegen.link/images/${img.img}.png`
+                ? `${img.img}`
                 : "img/no_img.webp"
             }
           />
