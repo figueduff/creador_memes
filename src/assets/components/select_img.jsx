@@ -8,12 +8,8 @@ function Select_img() {
 
   // selecion de imagen
   function handleClick(e) {
-    // const llego = imgseleccionada.current.dataset.url;
     const listOption = e.target.src;
-    console.log("levanto ",listOption)
     setimg(listOption);
-    // setimg(llego);
-    // console.log("llego ", llego);
   }
 
   // fetch de api imagenes

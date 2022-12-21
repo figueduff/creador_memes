@@ -16,7 +16,6 @@ function input_texto() {
       textShadow: "0 0 3px #000000",
     },
   };
-  console.log("render");
   return (
     <>
       <div data-html2canvas-ignore id="modificadores">
@@ -40,7 +39,6 @@ function input_texto() {
           <input
             onChange={(e) => {
               setcolorTexto(e.target.value);
-              console.log(colorTexto);
             }}
             type="color"
           />
@@ -53,7 +51,6 @@ function input_texto() {
             className="form-range"
             onChange={(e) => {
               settamanioTexto(e.target.value);
-              console.log(tamanioTexto);
             }}
             type="range"
             min="20"
@@ -70,7 +67,6 @@ function input_texto() {
           className="form-select form-select-sm"
             onChange={(e) => {
               settipografiaTexto(e.target.value);
-              console.log(tipografiaTexto);
             }}>
             <option value="Anton">Anton</option>
             <option value="Roboto">Roboto</option>

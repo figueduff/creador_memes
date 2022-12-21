@@ -6,14 +6,6 @@ import html2canvas from "html2canvas";
 const onClickExportar = function (evento) {
   alert("Se va a descargar su Meme");
 
-  // html2canvas(document.querySelector("#figure")).then( (canvas) => {
-  //   var img = canvas.toDataURL("image/png");
-  //   var link = document.createElement("a");
-  //   link.download = "Meme.jpg";
-  //   link.href = img;
-  //   link.click();
-  // });
-
   html2canvas(document.querySelector("#img_container"), {
     allowTaint: true,
     useCORS: true,
@@ -25,6 +17,7 @@ const onClickExportar = function (evento) {
     link.click();
   });
 };
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <div className="container text-center">
