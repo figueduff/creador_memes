@@ -8,7 +8,8 @@ function Select_img() {
 
   // selecion de imagen
   function handleClick(e) {
-    const listOption = e.target.src;
+    // const listOption = e.target.src; //con img
+    const listOption = e.target.dataset.url;
     setimg(listOption);
   }
 
@@ -46,7 +47,8 @@ function Select_img() {
                 data-url={op.blank}
                 onClick={handleClick}
                 ref={imgseleccionada}>
-                <img src={op.blank} />
+                {/* <img src={op.blank} /> */}
+                {op.name}
               </li>
             ))}
           </ul>

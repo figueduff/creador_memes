@@ -61,16 +61,18 @@ input[type="text"] {
 .form-label {
   margin: 0;
 }
+
 #eleccionimg {
   display: inline-block;
 }
-li img {
+
+/* li img {
   padding: 2px;
   height: 60px;
   width: 60px;
-}
-
-.dropdown {
+} */
+/* con carga img */
+/* .dropdown {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -82,12 +84,12 @@ li img {
   padding: 1px;
   text-align: center;
   cursor: pointer;
-} 
+}  */
 
 .dropdown-menu.show {
   display: flex;
   flex-wrap: wrap;
-  width: 320px;
+  width: 350px;
   margin: 0;
 } 
 
